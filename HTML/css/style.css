@@ -1,0 +1,16 @@
+img {
+    width: 300px;
+    height: auto;
+    }
+
+    body {
+    font-size: 25px;    
+    }
+
+    h2#firstheading {
+    color: red;
+    }
+
+    h2.secondclass {
+    color: blue;   
+    }

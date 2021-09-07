@@ -1,0 +1,21 @@
+.wrapper {
+width: 1200px;
+margin: 0 auto;
+}
+
+#pageheader {
+background-color: bisque;
+}
+
+.ourmenu {
+background-color: chartreuse;
+}
+
+img.logo {
+width: 250px;
+height: auto;
+}
+
+.ourmenu ul li {
+display: inline;
+}
