@@ -1,5 +1,5 @@
 .wrapper {
-width: 1200px;
+width: 1000px;
 margin: 0 auto;
 }
 
@@ -20,10 +20,14 @@ height: auto;
 display: inline;
 }
 
-#table1, #table1 th, #table1 td {
+#table1 th, #table1 td {
 border: 1px solid #000;
+text-align: center;
+
 }
 
 #table1 {
 background-color: aqua;
+width: 100%;
+border-collapse: collapse;
 }
