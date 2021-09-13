@@ -1,0 +1,45 @@
+body {
+font-size: 20px;
+}
+
+.firstcssclass {
+
+}
+
+#wrapper {
+width: 1000px;
+margin: 0 auto;
+background-color: aliceblue;  
+}
+
+/* this code is for heading */
+
+h1 {
+color: rgb(84, 117, 96) !important;
+border: 10px solid red;
+border-radius: 20px;
+margin: 0 auto 50px auto;
+padding: 30px 20px;
+width: 600px;
+max-width: 95%;
+height: 400px;
+max-height: 400px;
+outline: 10px dashed green;
+background: #000 url("../images/logo.png") no-repeat scroll bottom center;
+background-size: auto;
+text-align: center;
+}
+
+
+
+#firstcssid {
+margin-top: 0px;
+height:1500px;
+}
+
+
+
+p {
+
+}
+
