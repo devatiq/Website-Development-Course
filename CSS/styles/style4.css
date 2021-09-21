@@ -1,0 +1,194 @@
+/* CSS File for Class 4 on CSS */
+/* CSS Combinator
+   CSS position
+   Pseudo Class
+   Pseudo Selector 
+   Box Shadow
+   Image Style
+   Opacity
+   Flex and Grid practise */
+
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #000;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+max-width: 100%;
+margin: 0;
+border: 0;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+.child-class {
+    margin-bottom: 10px;
+}
+
+.parent-class ~ .child-class {
+    color: red;
+}
+
+.positionbox {
+margin-top: 50px;
+width: 400px;
+height: 300px;
+border: 1px solid red;
+padding: 20px;
+position: relative;
+margin-bottom: 50px;
+box-shadow: 3px 3px 10px rgba(0,0,0,.5), 3px 3px 15px rgba(0,0,0,.5);
+}
+
+.insidebox {
+position: absolute;
+top: 20px;
+left: 20px;
+background-color: darkseagreen;
+padding: 20px;
+z-index: 2;
+}
+
+.insidebox2 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: deepskyblue;
+    padding: 20px;
+    z-index: 1;
+    }
+
+.fixedposclass {
+border: 1px solid blue;
+padding: 10px 30px;
+display: inline-block;
+position: fixed;
+top: 0;
+left: 0;
+background-color: darkseagreen;
+color: #fff;
+}
+
+.stickymenu {
+background-color: dodgerblue;
+padding: 10px 5px;
+position: sticky;
+top: 50px;
+}
+
+.pseudo-classes a:hover {
+color: red;
+}
+
+.pseudo-classes::first-letter {
+    color: red;
+    font-size: 40px;
+}
+
+ul.ullist1 li:nth-child(2) {
+color: red;
+}
+
+.pseudo-classes::after {
+content: "P";
+}
+
+::selection {
+background-color: firebrick;
+color: #fff;
+}
+
+.imagestyle img {
+border: 2px solid red;
+border-radius: 20px;
+opacity: .7;
+}
+
+.imagestyle h3 {
+margin: 5px 0;
+padding: 5px 10px;
+color: #fff;
+}
+
+.imagestyle {
+background-color: forestgreen;
+display: inline-block;
+box-shadow: 3px 3px 20px rgba(0,0,0,.7);
+border-radius: 20px;
+}
+
+.imagestyle2 {
+margin-top: 40px;    
+}
+
+.imagestyle2 img {
+border-radius: 50%;
+}
+
+.parenflex {
+display: flex;
+margin-top: 40px;
+flex-wrap: wrap;
+}
+
+.item1 {
+flex-basis: 33%;
+background-color: green;
+padding: 20px;
+color: #fff;
+}
+
+.item2 {
+    flex-basis: 33%;
+    }
+
+.item3 {
+        flex-basis: 33%;
+}
+
+.btnclass a{
+background-color: hotpink;
+padding: 5px 15px;
+color: #fff;
+display: inline-block;
+text-decoration: none;
+margin-top: 5px;
+}
+
+.btnclass a:hover{ 
+    background-color:lawngreen;
+}
+
+.gridparenclass {
+margin-top: 50px;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 10px;
+}
+
+.griditem2 {
+/*     
+grid-column: 2 / 3;
+grid-row: 1 / span 2; */
+
+grid-area: 1 / 2 / span 2 / 3;
+border: 1px solid #000;
+background-color: lemonchiffon;
+}
