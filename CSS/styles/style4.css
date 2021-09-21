@@ -187,7 +187,6 @@ grid-gap: 10px;
 /*     
 grid-column: 2 / 3;
 grid-row: 1 / span 2; */
-
 grid-area: 1 / 2 / span 2 / 3;
 border: 1px solid #000;
 background-color: lemonchiffon;
