@@ -1,0 +1,277 @@
+/* CSS File for Class 5 on CSS */
+/* CSS Navigation
+   Dropdown Navigation
+   CSS Attribute Selector
+   CSS Image Sprites
+   CSS Forms
+   */
+
+html {
+    font-size: 100%;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #000;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#sitenav {
+background-color: green;
+}
+
+.primarynav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.primarynav ul li{
+    display: inline;
+    margin-left: -4px;
+    padding: 0;
+
+}
+
+.primarynav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: indianred;
+    border-right: 1px solid #fff;
+
+}
+
+.primarynav ul li:nth-child(2) a{
+    color: yellow;
+
+}
+
+.primarynav ul li:last-child a{
+    border-right: 0;
+
+}
+
+.primarynav ul li a:hover{
+    background-color: indigo;
+
+}
+
+#sitenav2 {
+    margin-top: 50px;
+    background-color: green;
+}
+
+.primarynav2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.primarynav2 ul li{
+float: left;
+position: relative;
+}
+
+.primarynav2 ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: indianred;
+    border-right: 1px solid #fff;
+
+}
+
+.primarynav2 ul li:last-child a{
+    border-right: 0;
+
+}
+
+.primarynav2 ul li a:hover{
+    background-color: indigo;
+
+}
+
+ul.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: hotpink;
+    width: 160px;
+    border-top: 1px solid #fff;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+li.dropdownmenu:hover ul.submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+ul.submenu li {
+    float: none;
+}
+
+ul.submenu li a {
+display: block;
+padding: 5px;
+width: 100%;
+}
+
+ul.submenu li a {
+    display: block;
+    padding: 5px;
+    border-right: 0;
+}
+
+ul.submenu li a:hover{
+        background-color:lawngreen;
+        color: black;
+
+    }
+
+.cssatrselector {
+    margin-top: 50px;
+}
+
+.cssatrselector a{
+text-decoration: none;
+display: block;
+margin-bottom: 10px;
+}
+
+/*
+a[target]
+a[target="_self"]
+a[title~="About"]
+a[class|="first full word"]
+a[class^="first any value"]
+a[class$="last any value"]
+a[class*="inside any value"]
+*/
+
+.cssatrselector a[class*="ser"]{
+    background-color: yellow;
+
+}
+
+.cssimgsrpites {
+    margin: 50px 0;
+
+}
+
+.firsprite {   
+    margin-top: 50px;
+    position: relative;
+    margin-left: 52px;
+}
+
+.firsprite::before {
+    content: "";
+    background: url(../images/img-sprites.gif) 0 0;
+    position: absolute;
+    height: 44px;
+    width: 46px;
+    left: -52px;
+    top: -15px;
+
+}
+
+.secsprite {
+    height: 44px;
+    width: 43px;
+    background: url(../images/img-sprites.gif) -47px 0;
+    margin-top: 50px;
+}
+
+.thirdsprite {
+    height: 44px;
+    width: 43px;
+    background: url(../images/img-sprites.gif) -91px 0;
+    margin-top: 50px;
+}
+
+#cssformst {
+    width: 50%;
+}
+
+#cssformst input, #cssformst textarea, #cssformst select{
+    display: block;
+    margin-bottom: 10px;
+}
+
+#cssformst input[type="text"], #cssformst input[type="email"], #cssformst select, #cssformst textarea{
+border: 1px solid red;
+padding: 10px 15px;
+font-size: 18px;
+width: 100%;
+}
+
+#cssformst input[type="text"]:focus {
+    border: 1px solid green;
+    background: turquoise;
+    color: #fff;
+    outline: none;
+}
+
+#cssformst ::placeholder {
+    color:violet;
+}
+
+#cssformst select{
+cursor: pointer;
+}
+
+#cssformst textarea{
+    height: 150px;
+
+}
+
+#cssformst button[type="submit"] {
+    background: turquoise;
+    border: 0;
+    /*padding: 20px 40px; */
+    color: 000;
+    border-radius: 3px;
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+#cssformst button[type="submit"]:hover {
+    cursor: pointer;
+    background: tomato;
+
+}
