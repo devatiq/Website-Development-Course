@@ -1,0 +1,152 @@
+/* CSS File for Class 6 on CSS */
+/* CSS Tables
+   CSS Text Effects
+   CSS Tooltip
+   CSS User Interface 
+   CSS Variables
+   */
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #593cff;
+    --red: #fb0007;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #000;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#firsttable {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+#firsttable th, #firsttable td {
+    border: 1px solid #000;
+    height: 50px;
+    text-align: center;
+    vertical-align: center;   
+}
+
+#firsttable th {
+    background-color: lightcoral;
+}
+
+#firsttable tr:nth-child(even) {
+    background-color: lightslategray;
+    color: #fff;
+}
+
+#firsttable tr:nth-child(even):hover {
+    background-color: lightsteelblue;
+
+}
+
+.cssunit {
+    margin-top: 50px;
+    height: 50vh;
+    background-color: lightyellow;
+}
+
+.cssunit span {
+    font-size: 2rem;
+}
+
+.csstexteffect {
+    margin-top: 50px;
+    width: 400px;
+    border: 1px solid red;
+    padding: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.csstexteffect:hover{
+    overflow: visible;
+}
+
+
+.csstexteffect2 {
+    margin-top: 50px;
+    width: 400px;
+    border: 1px solid red;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: keep-all ;
+}
+
+.csstooltip {
+    margin-top: 50px;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.tooltipconts {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-size: .9rem;
+    background-color: mediumpurple;
+    padding: 10px;
+    color: white;
+    visibility: hidden;
+}
+
+.csstooltip:hover .tooltipconts {
+    visibility: visible;
+
+}
+
+.csscolum {
+    margin-top: 50px;
+    column-count: 4; 
+    column-gap: 30px;
+    column-rule: 1px solid red;
+}
+
+.csscolum h3{
+    --red: #fd97fe;
+    column-span: all;
+    color: var(--red);
+}
+
+.cssresize {
+    margin-top: 50px;
+    width: 400px;
+    overflow: auto;
+    border: 5px solid red;
+    padding: 10px;
+    resize: both;
+    outline: 5px dashed greenyellow;
+    outline-offset: 10px;
+}
+
