@@ -1,0 +1,55 @@
+body {
+  background-color: #e5a2a3 !important;
+  font-size: 25px;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.sassnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sassnav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.sassnav a {
+  color: blue;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+}
+
+.extradiv {
+  margin: 30px;
+  color: green;
+  font-size: 30px;
+  font-style: italic;
+}
+
+.global-btn, .button1, .button2 {
+  padding: 10px 25px;
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button1 {
+  background-color: green;
+  color: white;
+}
+
+.button2 {
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=sass1.css.map */

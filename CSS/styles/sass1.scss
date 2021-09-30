@@ -1,0 +1,71 @@
+@import "redcolor";
+
+body {
+    background-color: aquamarine;
+}
+
+.sassnav {
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text: {
+            decoration: none;
+            align: center;
+        }
+    }
+
+    li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    a {
+        color: blue;
+
+        font: {
+            weight: 700;
+            style: italic;
+        }
+
+        text: {
+            decoration: none;
+            align: center;
+        }
+    }
+}
+
+
+@mixin firstmixin {
+    color: green;
+    font-size: 30px;
+    font-style: italic; 
+}
+
+.extradiv {
+    margin: 30px;
+    @include firstmixin;
+}
+
+.global-btn {
+    padding: 10px 25px;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.button1 {
+    background-color: green;
+    color: white;
+    @extend .global-btn;
+}
+
+.button2 {
+    background-color: red;
+    color: white;
+    @extend .global-btn;
+}
+
+
+
