@@ -1,0 +1,116 @@
+/* CSS File for Class 8 on CSS */
+/* 
+CSS Gradients
+CSS Transitions
+CSS Transform
+CSS Animation
+   */
+
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #000;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img, video {
+    max-width: 100%;
+}
+
+#wrapper {
+    width: 900px;
+    margin: 100px auto;
+}
+
+.csslinear {
+    width: 400px;
+    height: 150px;
+    background-image: linear-gradient(to right bottom, red, yellow);
+    background-color: red;
+}
+
+
+.csslinear-rep {
+    width: 400px;
+    height: 150px;
+    background-image: repeating-linear-gradient(to right bottom, red, yellow 10%, green 20%);
+    margin-top: 50px;
+}
+
+.cssradial {
+    width: 400px;
+    height: 150px;
+    background-image: radial-gradient(circle, red 5%, yellow 20%, green 75%);
+    background-color: red;
+    margin-top: 50px;
+}
+
+.cssradial-rep {
+    width: 400px;
+    height: 150px;
+    background-image: repeating-radial-gradient(red, yellow 10%, green 20%);
+    margin-top: 50px;
+}
+
+.csstrans {
+    width: 200px;
+    height: 100px;
+    background: red;
+    margin-top: 50px;
+    transition: all .5s ease-in-out .1s;
+}
+
+.csstrans:hover {
+    background: green;
+    width: 250px;
+    transform: scale(1.1,1.1);
+}
+
+.csstransform {
+    width: 300px;
+    height: 150px;
+    background-color: green;
+    margin-top: 50px;
+    /* transform: skew(20deg, 10deg);
+   transform: matrix(scaleX,skewY,skewX,scaleY,translateX,translateY); */
+   transform: matrix(1,-.3,1,1,100,50);
+}
+
+.cssanim {
+    margin-top: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: firstanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    animation-direction: reverse;
+}
+
+@keyframes firstanim {
+    0% {background-color: blue; left: 0px; top: 0px;}
+    25% {background-color: red; left: 200px; top: 0px;}
+    50% {background-color: yellow; left: 200px; top: 200px;} 
+    75% {background-color: green; left: 0px; top: 200px;} 
+    100% {background-color: blue; left: 0px; top: 0px;} 
+}
+
+
+

@@ -155,7 +155,6 @@ ul.submenu li a {
 ul.submenu li a:hover{
         background-color:lawngreen;
         color: black;
-
     }
 
 .cssatrselector {
@@ -180,7 +179,6 @@ a[class*="inside any value"]
 
 .cssatrselector a[class*="ser"]{
     background-color: yellow;
-
 }
 
 .cssimgsrpites {
@@ -202,7 +200,6 @@ a[class*="inside any value"]
     width: 46px;
     left: -52px;
     top: -15px;
-
 }
 
 .secsprite {
@@ -252,7 +249,6 @@ cursor: pointer;
 
 #cssformst textarea{
     height: 150px;
-
 }
 
 #cssformst button[type="submit"] {
@@ -267,7 +263,6 @@ cursor: pointer;
     margin-left: auto;
     margin-right: auto;
     display: block;
-
 }
 
 #cssformst button[type="submit"]:hover {
