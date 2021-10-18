@@ -87,8 +87,6 @@ else if (myAge === 18){
     console.log('You are not a human');
 }
 
-
-
 var myAge = 20;
 
 switch(myAge) {
