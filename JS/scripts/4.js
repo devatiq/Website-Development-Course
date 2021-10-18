@@ -12,122 +12,148 @@ Switch Statement
 
 /*
 let a = 10;
-let b = 9;
-let c = a != b;
+let b = 12;
 
-console.log(c);
+let c = a < b;
+
+console.log(c)
+
+let a = 10;
+let b = 12;
+
+let c = a >= b;
+
+console.log(c)
 
 let a = 10;
 let b = '10';
+
 let c = a !== b;
-
-console.log(c);
-
-
-let a = 10;
-let b = 9;
-
-let c = (a >= b) && (a > b) && (b> a);
-
-//True --> all true --> True
-//one False --> False
-
-console.log(c);
-
-let a = 10;
-let b = 9;
-
-let c = (a >= b) || (a > b) || (b> a);
-
-//True --> one true --> True
-//All False --> False
-
-console.log(c);
+console.log(c)
 
 let a = 10;
 let b = 10;
 
-let c = !(a === b);
+let c = (a === b) && (a >= b) && (a == b);
 
-console.log(c);
+//All true ---> true 
+//Any one false --> False
+
+console.log(c)
 
 let a = 10;
 let b = 10;
 
-let c = (a != b) ? 100 : 200;
+let c = (a !== b) || (a > b) || (a != b);
 
-console.log(c);
+//any one true ---> True 
+//All false --> False
+
+console.log(c)
+
+let a = 10;
+let b = 10;
+
+let c = !(a != b); //true
+
+console.log(c)
+
+let a = 9;
+let b = 11;
+
+let c = (a <= b) ? 100 : 200;
+
+console.log(c)
 
 let a = 7;
-let b = 9;
+let b = 7;
 
-if (7 <= 9 || 8 <= 9 || 9<9) {
-    console.log('You will be executed');
+if (b <= a) {
+console.log('this will be executed')
 }
 
-let myName = 10;
+if (7 > 5) {
+    console.log('this will be executed 2 ')
+    }
 
-if (myName === '10') {
-    console.log('You are Atiqur');
-} else {
-    console.log('You are not Atiqur');
+if (50< 100) {
+    console.log('this will be executed 3')
 }
-
-
+        
 let myAge = 18;
 
-if (myAge === 18) {
-    console.log('You are Tenager');
-} else if (myAge <= 18){
-    console.log('You are Children');
-}
-else if (myAge === 18){
-    console.log('You are Adult');
+if (myAge !== 18) {
+console.log('You are Teenager');
 } else {
-    console.log('You are not a human');
+    console.log('You are child or adult');
 }
 
-var myAge = 20;
+let myAge = 20;
+
+if (myAge >= 18) {
+console.log('You are Teenager');
+} else if (myAge !== 20){
+    console.log('You are adult');
+} else {
+    console.log('You are not Human');
+}
+
+*/
+
+let x = 30;
+
+if (x > 20) {
+    if (x > 25){
+  console.log('This is true');
+    }
+}
+
+
+/*
+
+let myAge = 17;
 
 switch(myAge) {
     case 18:
-    console.log('You are Tenager');
-   break;
+    console.log('You are adult');
+    break;
 
-    case 20:
-    console.log('You are Adult');
+    case 17:
+    console.log('You are Teenager');
     break;
 
     case 60:
-        console.log('You are old');
+    console.log('You are old');
     break;
 
     default:
-        console.log('You are not a human');
-
+    console.log('You are not human');
 }
+
 */
 
-let myDay ='Friday';
+let myDay = 'Friday';
 
 switch(myDay) {
- case 'Saturday':
-    console.log('This is a Saturday');
+    case 'Saturday':
+    console.log('This is Saturday');
     break;
 
-case 'Sunday':
-    console.log('This is a Saturday');
+    case 'Sunday':
+    console.log('This is Sunday');
     break;
 
-        //....
+    //....
 
-case 'Friday':
-    console.log('This is offday');
+    case 'Friday':
+    console.log('This is Off Day');
     break;
 
-    default: 
+    default:
     console.log('This is not a day at all');
 }
+
+
 
 
 
