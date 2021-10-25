@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class 6</title>
+
+    <style>
+        body {
+            padding: 100px;
+            font-size: 25px
+        }
+        img {
+            max-width: 100%;
+        }
+
+        #jstut {
+            color: red;
+        }
+
+        #popup {
+            background: rgba(0,0,0,.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 989;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .4s;
+        }
+
+        #popup.active { 
+
+            visibility: visible;
+            opacity: 1;
+
+        }
+
+        .poupcontainer {
+            width: 70%;
+            background: #fff;
+            padding: 50px;
+            margin: 0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 4px;
+        }
+
+        .closepop {
+            text-align: right;
+            cursor: pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<p class="ctext">This is Change text 1</p>
+<p class="ctext">This is Change text 2</p>
+<p class="ctext">This is Change text 3</p>
+<p class="ctext4">This is Change text 4</p>
+
+<div id="jstut">This is Original Text</div>
+
+<br><br>
+
+<form id="form1" action="#">
+    First Name: <input id="fname" type="text" name="fname" value="Atiqur"><br>
+    Last Name: <input id="lname" type="text" name="lname" value="Rahman"><br>
+    <input type="submit" value="Submit">
+</form> 
+
+<br><br>
+  
+<form id="form2" name="form2" action="#" onsubmit="return validateForm()">
+    Name: <input type="text" name="fname2">
+    <input type="submit" value="Submit">
+    </form><br><br>
+
+
+<button id="btn1" type="button">Button 1</button>
+
+<div id="popup">
+    <div class="poupcontainer">
+        <div class="closepop">X</div>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis ex animi non consequuntur nihil quos officia accusamus laborum hic odit corporis sapiente eaque incidunt, rerum, soluta recusandae ipsa quas fuga.</h1>
+    </div>
+</div>
+
+<script src="scripts/6.js"></script>
+</body>
+</html>
