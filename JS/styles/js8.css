@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px;
+    font-size: 50px;
+    background-color: #f1f1f1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.home-slider {
+    position: relative;
+}
+
+.home-slider .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -50px;
+}
+
+.home-slider .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -50px;
+}
+
+.home-slider .owl-dots {
+    text-align: center;
+
+}
+
+.home-slider .owl-dot {
+    width: 12px !important;
+    height: 12px !important;
+    background-color: bisque !important;
+    margin-right: 3px;
+    border-radius: 50%;
+}
+
+.home-slider .owl-dot.active {
+    background-color:brown !important;
+
+}
+
+.slider-item {
+    position: relative;
+}
+
+.slider-item .caption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 94%;
+    padding: 15px 3%;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+
+}
+
+.caption h3{
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.caption p{
+    font-size: 17px;
+    margin: 0;
+}
+
+#menuicon {
+    font-size: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#mobilemenu {
+    background: #fff;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -51%;
+    z-index: 999;
+    transition: left 0.5s;
+}
+
+#mobilemenu.menu-open {
+    left: 0;
+}
+
+#mobilemenu ul{
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+}
+
+#mobilemenu ul li{
+    position: relative;
+}
+
+#mobilemenu ul li a{
+    font-size: 17px;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    text-decoration: none;
+}
+
+.sub-toggle {
+    font-size: 20px;
+    padding: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 0;
+}
+
+.sub-toggle .fa-angle-down, .sub-toggle.sub-menu-open .fa-angle-right {
+    display: none;
+}
+
+.sub-toggle.sub-menu-open .fa-angle-down {
+    display: block;
+}
+
+#mobilemenu ul ul{
+    padding: 10px 30px;
+}
+
+#mobilemenu ul ul li a{
+    border-bottom: 0;
+    padding: 7px;
+
+}
+
+.sub-menu {
+    display: none;
+}
+
+.menuclose {
+    font-size: 30px;
+    margin: 25px;
+    text-align: right;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+    .slider-item .caption{
+        display: none;
+    }
+
+    .home-slider .owl-prev, .home-slider .owl-next {
+        top: 27%;
+
+    }
+    
+}

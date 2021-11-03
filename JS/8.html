@@ -5,27 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Class 8</title>
-
-    <style>
-        body {
-            padding: 100px;
-            font-size: 50px;
-            background-color: #ccc;
-        }
-        img {
-            max-width: 100%;
-        }
-
-  </style>
-
+       
+    <link rel="stylesheet" href="styles/js8.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+
+    <script src="https://kit.fontawesome.com/20ce5047b9.js" crossorigin="anonymous"></script>
+
+
 
 </head>
 
 <body>
 
+    <div id="menuicon"><i class="fas fa-bars"></i></div>
+
+    <div id="mobilemenu">
+
+        <div class="menuclose"><i class="fas fa-times-circle"></i></div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a>
+
+                <span class="sub-toggle"><i class="fas fa-angle-right"></i><i class="fas fa-angle-down"></i></span>
+
+                <ul class="sub-menu">
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="owl-carousel home-slider">
+        <div class="item slider-item"><img src="images/s1.jpg" alt="">
+
+            <span class="caption">
+                <h3>1. Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, error. Tempora ratione accusantium eligendi culpa.</p>
+            </span>
+
+
+        
+        </div>
+        <div class="item slider-item"><img src="images/s2.jpg" alt="">
+
+            <span class="caption">
+                <h3>2. Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, error. Tempora ratione accusantium eligendi culpa.</p>
+            </span>
+        
+        </div>
+        <div class="item slider-item"><img src="images/s3.jpg" alt="">
+
+            <span class="caption">
+                <h3>3. Lorem ipsum dolor sit amet.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, error. Tempora ratione accusantium eligendi culpa.</p>
+            </span>
+        
+        </div>
+    </div> <!-- end slider-->
+
+    <div class="owl-carousel home-carousel">
+        <div class="item caro-item"><img src="images/img1.jpg" alt="">
+        </div>
+
+        <div class="item caro-item"><img src="images/img2.jpg" alt="">
+        </div>
+
+        <div class="item caro-item"><img src="images/img3.jpg" alt="">
+        </div>
+
+        <div class="item caro-item"><img src="images/img4.jpg" alt="">
+        </div>
+
+        <div class="item caro-item"><img src="images/img5.jpg" alt="">
+        </div>
+
+        </div><!-- end carousel -->
+
 
    
-    <script src="scripts/8.js"></script>
+ <script src="scripts/owl.carousel.min.js"></script>
+<script src="scripts/8.js"></script>
 </body>
 </html>
