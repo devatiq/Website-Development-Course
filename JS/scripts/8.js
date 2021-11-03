@@ -60,7 +60,7 @@ $(document).ready(function(){
     });
 
     $('.sub-toggle').click(function(){
-        $('.sub-menu').slideToggle('menu-open');
+        $('.sub-menu').slideToggle('slow');
         $(this).toggleClass('sub-menu-open');
     });
 
